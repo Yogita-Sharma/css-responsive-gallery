@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1.0, maximum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<title></title>
+	<style type="text/css">
+		*{
+			padding:o;
+			margin:0;
+			font-family:'Raleway',sans-serif;		
+		}
+		body{
+			background-color: #141414;
+		}
+		.grid{
+			display: grid;
+			grid-template-columns: repeat(5, 225px); 
+			grid-template-rows: repeat(6, 220px); 
+			grid-gap:7px;
+			margin-bottom: 50px;
+			margin-top:50px; 
+			justify-content: center;
+			grid-template-areas:
+			" one five eight eight twelve "
+			"  two five eight eight twelve "
+			"  two six six nine thirteen "
+			"  three six six ten thirteen"
+			"  four four seven seven seven"
+			"  four four eleven eleven eleven "
+			;
+		}
+		.grid .one {
+			background-color: #b0e0e6;
+			position: relative;
+			grid-area:one;
+		}
+		.grid .two {
+			background-image: url("coding.jpg");
+			background-position: 80% 80%;
+			grid-area:two;
+		}
+		.grid .three {
+			background-color: #966fd6;
+			grid-area:three;
+		}
+		.grid .four {
+			background-image: url("laptop.jpg");
+			background-position:55% 65%;
+			grid-area:four;
+		}
+		.grid .five {
+			background-color:#ff9933;
+			grid-area:five;
+		}
+		.grid .six {
+			background-image: url("webdesign.jpg");
+			grid-area:six;
+		}
+		.grid .seven {
+			background-image: url("laptop_3.jpg");
+			
+			grid-area:seven;
+		}
+		.grid .eight {
+			background-image: url("web_design.jpg");
+			background-position: 50% 80%;
+			grid-area:eight;
+		}
+		.grid .nine {
+			background-color:#b2ff66;
+			grid-area:nine;
+		}
+		.grid .ten {
+			background-color:#FF69B4;
+			grid-area:ten;
+		}
+		.grid .eleven {
+			background-image: url("seo_2.jpg");
+			background-position: 50% 50%;
+			grid-area:eleven;
+		}
+		.grid .twelve {
+			background-color: #e0e0e0;
+			grid-area:twelve;
+		}
+		.grid .thirteen {
+			background-image: url("laptop_2.png");
+			background-position: 50% 50%;
+			grid-area:thirteen;
+		}
+		.grid > .three > ul , .grid > .ten > ul , .grid > .twelve > ul{
+			color:#fff;
+			margin:10px;
+			font-size: 1.5rem;
+		}
+		.grid > .one >p:nth-child(1){
+			color:#fff;
+			position:absolute;
+			bottom:0;
+			font-size:1.5rem;
+		}
+		.grid > .one >p:nth-child(2){
+			transform:rotate(-90deg);
+			position: absolute;
+			right:-70px;
+			color:#fff;
+			bottom:100px;
+			font-size:1.5rem;
+		}
+		.grid > .five > p , .grid > .nine > p {
+			color:#fff;
+			font-size:1.2rem;
+			padding:5px;
+		}
+		@media  only screen and (max-width: 700px){
+			.grid {
+			display: grid;
+			grid-template-columns: repeat(2, 210px); 
+			grid-template-rows: repeat(12, 210px); 
+			grid-gap:7px;
+			margin-top:50px; 
+			justify-content: center;
+			grid-template-areas:
+			" eight eight "
+			" eight eight "
+			"  one three "
+			"  six six "
+			"  six six "
+			"  two five "
+			"  two five "
+			"  seven eleven"
+			"  nine ten "
+			" four four "
+			" four four "
+			" twelve thirteen "
+			" twelve thirteen "
+			;
+		}
+	}
+		@media  only screen and (max-width:1200px) and (min-width:700px) {
+			.grid {
+			display: grid;
+			grid-template-columns: repeat(3, 230px); 
+			grid-template-rows: repeat(11, 210px); 
+			grid-gap:7px;
+			margin-top:50px; 
+			justify-content: center;
+			grid-template-areas:
+			" eight eight eight "
+			" eight eight eight "
+			" one two nine "
+			" three two ten "
+			" six six five "
+			" six six five "
+			"  seven seven seven "
+			"  twelve four four "
+			"  twelve four four "
+			"  eleven eleven thirteen "
+			"  eleven eleven thirteen "	
+			;
+			}
+	}
+	</style>
+</head>
+<body>
+	<div class="grid">
+		<div class="one"><p>FRONT-END WEB</p><p>DEVELOPMENT</p></div>
+		<div class="two"></div>
+		<div class="three">
+			<ul>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>JAVASCRIPT</li>
+				<li>JQUERY</li>
+				<li>BOOTSTRAP</li>
+				<li>ANGULAR JS</li>
+			</ul>
+		</div>
+		<div class="four"></div>
+		<div class="five"><p><b><u>Web development</u></b> is the coding or programming that enables website functionality, per the owner's requirements. It mainly deals with the non-design aspect of building websites, which includes coding and writing markup.Web development ranges from creating plain text pages to complex web-based applications, social network applications and electronic business applications.</p></div>
+		<div class="six"></div>
+		<div class="seven"></div>
+		<div class="eight"></div>
+		<div class="nine"><p><b><u>Responsive Web Design</u></b> is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, and phones):</p></div>
+		<div class="ten">
+			<ul>
+				<li>CLIENT-SIDE</li>
+				<li>SERVER-SIDE</li>
+				<li>DATABASE TECHNOLOGY</li>
+			</ul>
+		</div>
+		<div class="eleven"></div>
+		<div class="twelve">
+			<ul>
+				<li>HTML/CSS</li>
+				<li>JAVASCRIPT</li>
+				<li>PHOTOSHOP</li>
+				<li>WORDPRESS</li>
+				<li>ANALYTICAL SKILLS</li>
+				<li>SEO</li>
+				<li>RESPONSIVE DESIGN</li>
+			</ul>
+		</div>
+		<div class="thirteen"></div>
+		
+</body>
+</html>
